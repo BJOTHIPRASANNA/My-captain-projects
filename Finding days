@@ -1,0 +1,26 @@
+import java.util.*;//importing the util class from java package
+public class Finding_days{
+public static void main(String args[])
+{
+    int min,year=0,day=0;
+    Scanner sc=new Scanner(System.in);//declaring the oblect for scanner class
+    min=sc.nextInt();//getting in from the user
+    int temp=min;
+    while(min>1440)//loop for finding number if days
+    {
+        if(min>=525600)//for year
+        {
+            min=min-525600;
+            year++;
+        }
+        else//for days
+        {
+            day++;
+            min=min-1440;
+            
+        }
+        
+    }
+    System.out.println(temp + " minutes is approximately "+ year+" years and "+day+" days");
+}
+}
