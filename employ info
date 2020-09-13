@@ -1,0 +1,27 @@
+employ info
+public class Main
+{
+    public static void main(String args[])
+{
+    String name1="Robert";
+    String name2="sam";
+    String name3="john";
+    int year[] = new int[3];
+    String address1="WallsStreet";
+    String address2="WallsStreet";
+    String address3="WallsStreet";
+    year[0]=1994;
+    year[1]=2000;
+    year[2]=1999;
+    String sal1="64C-";
+    String sal2="68D-";
+    String sal3="26B-";
+    System.out.println("Name\tYear of joining\nAddress\n");
+    System.out.format("%s\t\t%d\t%s\n",name1,year[0],sal1);
+    System.out.format("%s\n",address1);
+    System.out.format("%s\t\t%d\t%s\n",name2,year[1],sal2);
+    System.out.format("%s\n",address2);
+    System.out.format("%s\t\t%d\t%s\n",name3,year[2],sal3);
+}
+}
+
