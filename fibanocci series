@@ -1,0 +1,46 @@
+fibanoci series without recursion
+public class Main
+{
+	public static void main(String[] args){
+	    int before =0,after=1,temp;
+	    	        System.out.format("%d ",before);
+	        System.out.format("%d",after);
+	    while(after<=100)
+	    {
+	        
+	        System.out.format("%c",' ');
+	        temp  = after;
+	        after = before+after;
+	        before=temp;
+	        System.out.format("%d",after);	        
+	   }
+	}
+}
+fibanoci using with recursion
+public class Main
+{
+	public static void main(String[] args){
+	    int before =0,after=1;
+	    	System.out.format("%d ",before);
+	        System.out.format("%d",after);
+	        fibanocci(before,after);
+	    
+	}
+	 public static void fibanocci(int before,int after)
+	{
+	   
+	   
+	    int temp;
+	    System.out.format("%c",' ');
+	    temp  = after;
+	    after = before+after;
+	    before=temp;
+	    System.out.format("%d",after);
+	    if(after<=100) fibanocci(before,after);
+	    
+	}
+	
+}
+	
+
+
