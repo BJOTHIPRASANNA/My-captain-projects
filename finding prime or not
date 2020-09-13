@@ -1,0 +1,21 @@
+import java.util.Scanner;
+pubic class Main
+{
+    pubic static void main(String args[])
+    {
+    int num,check=0;//num for storing the input number and check for the prime number confirmation
+    System.out.println("Please insert any number");
+    Scanner sc = new Scanner(System.in);
+    num = sc.nextInt();
+    for(int i=2;i<num;i++)
+    {
+        if(num%i==0)
+        {
+            System.out.println(num+" is not a prime number");
+            check = 1;
+            break;
+        }
+    }
+    if(check==0)System.out.println(num+" is a prime number");
+    }
+}
